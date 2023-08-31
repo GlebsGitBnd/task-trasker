@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="common/css/jquery-ui.min.css">
+    <script src="common/js/.lab/jquery-3.6.2.min.js"></script>
+    <script src="common/js/.lab/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="tasks/css/tasks.css">
+    <link rel="stylesheet" href="employees/css/employee.css">
+    <link rel="stylesheet" href="common/css/common_css.css">
+
+</head>
+<body>
+<main class="task-tracker">
+    <section class="task-tracker__employee employee">
+        <div class="employee__new_employee">
+            <div class="employee__add_button add-button">
+                <img src="tasks/img/converted.svg" alt="">
+                <div class="add_button_inscription">
+                    <b>Д</b>
+                    <b>о</b>
+                    <b>б</b>
+                    <b>а</b>
+                    <b>в</b>
+                    <b>и</b>
+                    <b>т</b>
+                    <b>ь</b>
+                    <b> </b>
+                    <b>C</b>
+                    <b>о</b>
+                    <b>т</b>
+                    <b>р</b>
+                    <b>у</b>
+                    <b>д</b>
+                    <b>н</b>
+                    <b>и</b>
+                    <b>к</b>
+                    <b>а</b>
+                </div>
+            </div>
+            <div class="employee__card_window card-window"></div>
+        </div>
+    </section>
+    <section class="task-tracker__tasks tasks">
+        <h1 class="tasks__header"><strong>Список задач</strong></h1>
+        <div class="tasks__all_tasks all-tasks" id="sortable"></div>
+        <div class="tasks__new_task new-task">
+            <div class="new-task__add_button">
+                <img src="tasks/img/converted.svg" alt="add">
+                <div class="new-task__text">
+                    <b>Д</b>
+                    <b>о</b>
+                    <b>б</b>
+                    <b>а</b>
+                    <b>в</b>
+                    <b>и</b>
+                    <b>т</b>
+                    <b>ь</b>
+                    <b> </b>
+                    <b>З</b>
+                    <b>а</b>
+                    <b>д</b>
+                    <b>а</b>
+                    <b>ч</b>
+                    <b>у</b>
+                </div>
+            </div>
+            <div class="new-task__card_window card-window"></div>
+        </div>
+    </section>
+
+</main>
+
+<script src="common/js/check_error.js"></script>
+<script src="common/js/create_card.js"></script>
+<script src="common/js/check_regexp_data.js"></script>
+<script src="common/js/html_create_common.js"></script>
+
+
+<script src="employees/js/components/CRUD/employee_init.js"></script>
+<script src="employees/js/components/CRUD/employee_add_new.js"></script>
+
+<script src="employees/js/components/render/html_create_employee.js"></script>
+
+
+<script src="tasks/js/CRUD/task_init.js"></script>
+<script src="tasks/js/CRUD/task_delete.js"></script>
+<script src="tasks/js/CRUD/task_update.js"></script>
+<script src="tasks/js/CRUD/task_add_new.js"></script>
+
+
+<script src="tasks/js/render/html_create_task.js"></script>
+<script src="tasks/js/render/task_render.js"></script>
+<script src="tasks/js/render/task_open.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>

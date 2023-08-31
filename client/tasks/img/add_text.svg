@@ -1,0 +1,6 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path id="curve" d="M10 80 Q 52.5 10, 95 80 T 180 80" fill="transparent" />
+  <text font-size="16">
+    <textPath href="#curve">Добавить задачу</textPath>
+  </text>
+</svg>

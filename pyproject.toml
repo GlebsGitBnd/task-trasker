@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stc-task-tracker5"
+version = "0.1.0"
+description = "test-task_task-tracker"
+authors = ["Gleb Korotky <korotkiygs@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^2.0.1"
+flask-sqlalchemy = "^3.0.0"
+flask-cors = "*"
+flask-migrate = "^4.0.4"
+sqlalchemy = "^2.0.20"
+flask-autoindex = "^0.6.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

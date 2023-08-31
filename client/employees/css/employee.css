@@ -1,0 +1,126 @@
+.task-tracker__employee {
+    position: absolute;
+}
+
+.employee__new_employee {
+    position: fixed;
+    display: flex;
+    left: 5%;
+    bottom: 60%;
+}
+
+.employee__new_employee img {
+    height: 60px;
+    width: 60px;
+    transition: ease 1s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.employee__new_employee img:hover {
+    transition: ease 1s;
+    transform: scale(1.3);
+}
+
+.employee__add_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    position: absolute;
+    top: -50%;
+}
+
+.employee__add_button {
+
+}
+
+.employee__add_button b {
+    position: absolute;
+    left: 50%;
+    width: 0;
+
+}
+
+.employee__add_button b:nth-last-of-type(-n+19) {
+    top: -5%;
+    transform-origin: 0 15%;
+    padding-top: 50%;
+}
+
+.employee__add_button b:nth-last-of-type(1) {
+    transform: rotate(270deg);
+}
+
+.employee__add_button b:nth-last-of-type(2) {
+    transform: rotate(280deg);
+}
+
+.employee__add_button b:nth-last-of-type(3) {
+    transform: rotate(290deg);
+}
+
+.employee__add_button b:nth-last-of-type(4) {
+    transform: rotate(300deg);
+}
+
+.employee__add_button b:nth-last-of-type(5) {
+    transform: rotate(310deg);
+}
+
+.employee__add_button b:nth-last-of-type(6) {
+    transform: rotate(320deg);
+}
+
+.employee__add_button b:nth-last-of-type(7) {
+    transform: rotate(330deg);
+}
+
+.employee__add_button b:nth-last-of-type(8) {
+    transform: rotate(340deg);
+}
+
+.employee__add_button b:nth-last-of-type(9) {
+    transform: rotate(350deg);
+}
+
+.employee__add_button b:nth-last-of-type(10) {
+    transform: rotate(360deg);
+}
+
+.employee__add_button b:nth-last-of-type(11) {
+    transform: rotate(5deg);
+}
+
+.employee__add_button b:nth-last-of-type(12) {
+    transform: rotate(25deg);
+}
+
+.employee__add_button b:nth-last-of-type(13) {
+    transform: rotate(35deg);
+}
+
+.employee__add_button b:nth-last-of-type(14) {
+    transform: rotate(45deg);
+}
+
+.employee__add_button b:nth-last-of-type(15) {
+    transform: rotate(55deg);
+}
+
+.employee__add_button b:nth-last-of-type(16) {
+    transform: rotate(65deg);
+}
+
+.employee__add_button b:nth-last-of-type(17) {
+    transform: rotate(75deg);
+}
+
+.employee__add_button b:nth-last-of-type(18) {
+    transform: rotate(85deg);
+}
+
+.employee__add_button b:nth-last-of-type(19) {
+    transform: rotate(95deg);
+}
