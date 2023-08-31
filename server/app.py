@@ -1,3 +1,4 @@
+from __future__ import annotations
 from flask import Flask, request, jsonify, Response
 from flask_autoindex import AutoIndex
 from flask_cors import CORS

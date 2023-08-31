@@ -7,6 +7,12 @@ class TaskController:
 	@staticmethod
 	def get_all_tasks() -> Union[
 		List[Dict[str, Any]], Tuple[Dict[str, str], int]]:
+		"""
+	        Получает список всех задач из БД
+	
+	        :return: Список словарей, представляющих данные задачи
+	            или кортеж с сообщением об ошибке и кодом состояния
+        """
 		tasks = Task.query.order_by(Task.sort_order).all()
 		task_list = []
 		
@@ -27,6 +33,13 @@ class TaskController:
 	@staticmethod
 	def get_task_by_id(task_id: int) -> Union[
 		Dict[str, Any], Tuple[Dict[str, str], int]]:
+		"""
+	        Получает данные задачи по ее идентификатору из БД
+	
+	        :param task_id: идентификатор задачи
+	        :return: Словарь, представляющий данные одной задачи
+	            или кортеж с сообщением об ошибке и кодом состояния
+        """
 		task = Task.query.get(task_id)
 		if task:
 			task_data = {
@@ -43,6 +56,13 @@ class TaskController:
 	@staticmethod
 	def sort_tasks_by_order(task_order: List[int]) -> Union[
 		Dict[str, str], Tuple[Dict[str, str], int]]:
+		"""
+	        Обновляет порядок сортировки задач в БД
+	
+	        :param task_order: Список идентификаторов задач в необходимом порядке
+	        :return: Словарь с сообщением об успешном выполнении
+	            или кортеж с сообщением об ошибке и кодом состояния
+        """
 		if task_order:
 			for index, task_id in enumerate(task_order):
 				task = Task.query.get(task_id)
@@ -55,6 +75,13 @@ class TaskController:
 	@staticmethod
 	def create_task(data: Dict[str, Any]) -> Union[
 		Dict[str, str], Tuple[Dict[str, str], int]]:
+		"""
+	        Создает новую задачу в БД
+	
+	        :param data: Словарь с данными задачи
+	        :return: Словарь с сообщением об успешном выполнении
+	            или кортеж с сообщением об ошибке и кодом состояния
+        """
 		new_task = Task(
 			task_name=data['task_name'],
 			parent_task_id=data.get('parent_task_id'),
@@ -78,6 +105,14 @@ class TaskController:
 	@staticmethod
 	def update_task(task_id: int, data: Dict[str, Any]) -> Union[
 		Dict[str, str], Tuple[Dict[str, str], int]]:
+		"""
+            Обновляет задачу по ее идентификатору в БД
+	
+	        :param task_id: идентификатор задачи
+	        :param data: Словарь с обновленными данными задачи
+	        :return: Словарь с сообщением об успешном выполнении
+	            или кортеж с сообщением об ошибке и кодом состояния
+        """
 		task = Task.query.get(task_id)
 		if task:
 			task.task_name = data['task_name']
@@ -93,6 +128,12 @@ class TaskController:
 	@staticmethod
 	def delete_task(task_id: int) -> Union[
 		Dict[str, str], Tuple[Dict[str, str], int]]:
+		"""
+	        Удаляет задачу по ее идентификатору из БД
+	
+	        :param task_id: идентификатор задачи задачи
+	        :return: Словарь с сообщением об успешном выполнении, или кортеж с сообщением об ошибке и кодом состояния
+        """
 		task = Task.query.get(task_id)
 		if task:
 			db.session.delete(task)
