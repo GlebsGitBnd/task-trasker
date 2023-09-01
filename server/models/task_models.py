@@ -1,4 +1,4 @@
-from server.data_base.data_base_init import db
+from server.data_base import db
 
 
 class Task(db.Model):

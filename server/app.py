@@ -4,9 +4,9 @@ from flask_autoindex import AutoIndex
 from flask_cors import CORS
 from flask_migrate import Migrate
 
-from server.data_base.data_base_init import db
-from server.controllers.employee_controller import EmployeeController
-from server.controllers.task_controller import TaskController
+from server.data_base import db
+from server.controllers import EmployeeController
+from server.controllers import TaskController
 
 import os
 

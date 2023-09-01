@@ -1,6 +1,8 @@
-from server.models.task_models import Task, db
 from typing import List, Dict, Union, Any, Tuple
 from datetime import datetime
+
+from server.models.task_models import Task
+from server.data_base import db
 
 
 class TaskController:

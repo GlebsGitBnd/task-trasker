@@ -1,6 +1,8 @@
 from typing import List, Dict, Union, Any, Tuple
 from datetime import datetime
-from server.models.employee_models import Employee, db
+
+from server.models import Employee
+from server.data_base import db
 
 
 class EmployeeController:
